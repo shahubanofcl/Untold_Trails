@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Untold Trails</title>
+    <meta
+      name="description"
+      content="Explore all 14 districts of Kerala with famous places, images, and Wikipedia links."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Kerala Hidden Trails home">
+          <span class="brand-mark">UT</span>
+          <span class="brand-text">Untold Trails</span>
+        </a>
+      </header>
+
+      <main id="top">
+        <section class="hero" data-reveal>
+          <div class="hero-copy">
+            <p class="eyebrow">Where Kerala hides its secrets</p>
+            <h1>Explore Kerala's Hidden Trails</h1>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#districts">Explore Districts</a>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-hidden="true">
+            <article class="floating-card floating-card-large">
+              <span class="card-label">Coverage</span>
+              <h2><span id="hero-district-count">14</span> Districts</h2>
+              <p>From Thiruvananthapuram to Kasaragod, all districts in one place.</p>
+            </article>
+
+            <article class="floating-card floating-card-small">
+              <span class="card-label">Places</span>
+              <h2><span id="hero-place-count">70</span> Stops</h2>
+              <p>Every place card includes an image and a direct Wikipedia link.</p>
+            </article>
+
+            <div class="floating-orb orb-one"></div>
+            <div class="floating-orb orb-two"></div>
+          </div>
+        </section>
+
+        <section class="districts-shell" id="districts">
+          <div class="section-heading" data-reveal>
+          </div>
+
+          <div id="district-directory" class="district-directory-grid" data-reveal></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./data/districts.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
